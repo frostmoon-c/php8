@@ -1,0 +1,402 @@
+
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+<head>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122761076-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-122761076-1');
+</script>
+
+<meta charset="UTF-8">
+<title>大阪のWEBシステム・アプリ開発｜テトラコマンド株式会社</title>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<meta name="format-detection" content="telephone=no">
+<meta name="keywords" content="WEBシステム開発,アプリ開発,大阪,梅田,iPhoneアプリ,Androidアプリ,iPadアプリ,業務システム">
+<meta name="description" content="大阪 梅田でWEBシステム、iPhoneアプリ、Androidアプリ、業務システムなどの開発を行うテトラコマンド株式会社です。">
+
+
+<!-- OGP -->
+<meta property="og:type" content="website"><!-- トップページであれば「website」-->
+<meta property="og:title" content="大阪のWEBシステム・アプリ開発｜テトラコマンド株式会社"><!-- titleと文字数も揃える -->
+<meta property="og:site_name" content="テトラコマンド株式会社"><!-- サイト名 -->
+<meta property="og:url" content="//www.tetracommand.co.jp/">
+<meta property="og:image" content="//www.tetracommand.co.jp/img/og_img.png"><!-- 1200x630推奨 -->
+<meta property="og:description" content="大阪 梅田でWEBシステム、iPhoneアプリ、Androidアプリ、業務システムなどの開発を行うテトラコマンド株式会社です。">
+
+<link rel="stylesheet" href="./css/font-awesome.min.css">
+<link rel="stylesheet" href="./css/default.css">
+<link rel="stylesheet" href="./css/common.css" media="screen,print">
+
+<link rel="shortcut icon" href="./img/favicon.ico">
+<link rel="icon" type="image/png" href="./img/favicon.png">
+<link rel="apple-touch-icon-precomposed" href="./img/apple-touch-icon-152x152.png">
+
+<script src="./js/jquery-1.11.0.min.js"></script>
+<script src="./js/response.min.js"> </script>
+<script src="./js/pageTop.js"></script>
+<script src="./js/slip.js"></script>
+<script src="./js/over.js"></script>
+<script src="./js/jquery.bxslider.min.js"></script>
+
+<script src="./js/jquery.matchHeight.js"></script>
+
+<script>
+
+	$(function(){
+
+		var obj = $('.bxslider').bxSlider({
+
+			auto:true,	//スライドショーを自動再生
+			pause:5000,	//3.5秒ポーズ（停止して次のスライド）
+			mode: 'horizontal', //画像の切り替えを垂直方向の縦スライド。縦は'vertical'。横は'horizontal（初期値）'。フェードは'fade'。
+			autoHover:true, //スライダーにマウスオーバーすると一時停止する
+			moveSlides: 1, //指定された値だけスライドする
+			minSlides: 1, //１スライドに表示するサムネイルの数
+			maxSlides: 1, //１スライドに表示するサムネイルの最大数
+			slideWidth: 1920, //スライダーの横幅
+			slideMargin: 0, //スライダー間のマージン
+			speed: 1000, //スライダーのスピード
+
+			startSlide: 0, //最初の画像をどれにするか？？
+			randomStart: false, //最初のスライドをランダムに表示させる。
+			infiniteLoop: true, //無限に繰り返すかどうか
+			captions: true, //キャプションを表示するかどうか。キャプションは img 要素の title 属性に記述
+
+			video: false, //スライドにビデオが含まれる場合は「true」に設定してダウンロードした「plugins」。フォルダの「jquery.fitvids.js」も読み込むようにする。
+			responsive: true, //boolean (true / false) レスポンシブ対応にするかどうか
+			useCSS: true, //boolean (true / false) true の場合、CSS の transitions が使われ、 false の場合は、jQuery animate() が使われる。
+			pager: false, //boolean (true / false) ページャー（丸いアイコン）の表示、サムネル表示の場合もtrue
+			controls: false, //boolean (true / false) コントロール（Next, Prev）を表示するかどうか
+
+			autoControls: false, //boolean (true / false) true の場合 Stop, Start のコントロールが表示される
+			autoControlsCombine: false, //boolean (true / false) true の場合スライドが実行されていれば Stop のみが表示され、停止しているときは Start のみが表示される
+
+
+			pagerCustom: '#bx-pager', //サムネイルを表示する
+
+			onSlideAfter: function(){obj.startAuto(); }
+		});
+
+	});
+
+	$(window).load(function(){
+
+		//matchHeight
+		$('.contentStyle01 li dd h3').matchHeight();
+		$('.contentStyle01 li dd p').matchHeight();
+		$('.contentStyle02 li dd h3').matchHeight();
+		$('.contentStyle02 li dd p').matchHeight();
+
+	});
+
+
+
+</script>
+
+
+<!--[if lt IE 9]>
+<script src="./js/html5.js"></script>
+<script src="./js/css3-mediaqueries.js"></script>
+<![endif]-->
+
+</head>
+
+
+
+<body id="pTop" class="website" data-responsejs='{ "create": [ { "prop": "width", "prefix": "src", "lazy": true, "breakpoints": [0,592,1001] } ]}'>
+
+
+<div class="headerWrap">
+
+	<!-- header -->
+	<header>
+		<div class="cf">
+			<p class="logo"><a href="./"><img src="./img/logo.png" alt="テトラコマンド株式会社"></a></p>
+			<p class="telBtn sp"><a href="tel:0664678546"><i class="fa fa-phone"></i></a></p>
+			<p class="menuBtn sp"><a href="#modal" id="naviOpen"><i class="fa fa-bars"></i></a></p>
+		</div>
+		<h1>大阪北区梅田のWEBシステム開発、アプリ開発ならテトラコマンド株式会社へ</h1>
+	</header><!-- /header -->
+
+
+	<!-- cover -->
+	<div id="cover">
+		<ul class="bxslider cf">
+			<li class="cover01">
+				<span class="pc"><img src="./img/cover01.png" alt="Innovation in everyday life 日々の生活にイノベーションを"></span>
+				<span class="sp"><img src="./img/cover01.jpg" alt="Innovation in everyday life 日々の生活にイノベーションを"></span>
+			</li>
+			<li class="cover02">
+				<span class="pc"><img src="./img/cover02.png" alt="To the driving force for your project あなたのプロジェクトへの推進力に"></span>
+				<span class="sp"><img src="./img/cover02.jpg" alt="To the driving force for your project あなたのプロジェクトへの推進力に"></span>
+			</li>
+			<li class="cover03">
+				<span class="pc"><img src="./img/cover03.png" alt="Can I do this? I will shape it こんな事できないかな？をカタチにします"></span>
+				<span class="sp"><img src="./img/cover03.jpg" alt="Can I do this? I will shape it こんな事できないかな？をカタチにします"></span>
+			</li>
+		</ul>
+	</div>
+	<!-- /cover -->
+
+</div>
+
+<!-- nav -->
+<nav class="pc">
+	<ul>
+		<li><a href="./"><img src="./img/gnavi01_off.png" alt="ホーム"></a></li>
+		<li><a href="./introduction.html"><img src="./img/gnavi02_off.png" alt="事業紹介"></a></li>
+		<li><a href="./performance.html"><img src="./img/gnavi03_off.png" alt="制作実績"></a></li>
+		<li><a href="./recruit.php"><img src="./img/gnavi06_off.png" alt="採用情報"></a></li>
+		<li><a href="./company.html"><img src="./img/gnavi04_off.png" alt="会社概要"></a></li>
+		<li><a href="./contact.php"><img src="./img/gnavi05_off.png" alt="お問い合わせ"></a></li>
+	</ul>
+</nav>
+<!-- /nav -->
+
+
+<div id="main">
+
+	<section class="conteBox">
+		<h2 class="titleStyle01">Hello, world!</h2>
+
+		<dl class="top_lead">
+			<dt><img src="./img/top_lead.png" alt="Hello, world!"></dt>
+			<dd>
+				<p>はじめまして、私たちテトラコマンドは大阪市北区に拠点を構える、システム・アプリ開発のチームです。<br>
+				日々の業務改善や、新たなプロジェクトの推進力の一助となれるような会社を目指しております。</p>
+
+				<a href="./company.html" class="btnStyle01">会社概要はコチラ</a>
+			</dd>
+		</dl>
+	</section>
+
+	<section class="conteBox">
+		<h2 class="titleStyle02">
+			Recruit
+			<span>採用情報</span>
+		</h2>
+		<ul class="performance_list cf">
+			<li id="web">
+				<dl class="cf">
+					<dt><img src="./img/top_recruit.jpg" alt="採用情報"></dt>
+					<dd>
+						<h4>一緒にお仕事させていただく仲間、募集中！</h4>
+
+						<p>新規・継続業務の拡大のため人員募集しております。<br>条件はまず「プログラムが好きなこと」。元気な方も、静かな方も大歓迎！<br>まずは<a href="./recruit.php">こちらの採用情報ページ</a>よりご応募ください。</p>
+					</dd>
+				</dl>
+			</li>
+		</ul>
+	</section>
+
+	<div class="bg_gray">
+		<section class="conteBox">
+			<h2 class="titleStyle02">
+				Our Business
+				<span>事業紹介</span>
+			</h2>
+
+			<ul class="contentStyle01 cf">
+				<li class="contentColor01">
+					<dl>
+						<dt><img src="./img/top_business01.png" alt="システム開発"></dt>
+						<dd>
+							<h3>システム開発</h3>
+
+							<p>弊社ではWEBの分野をベースとして、ローカルアプリケーションとの連携にも注力しております。業務システムを中心とした各種イノベーションをご提案できます。</p>
+
+							<a href="./introduction.html#system" class="btnStyle02">もっと詳しく</a>
+						</dd>
+					</dl>
+				</li>
+				<li class="contentColor02">
+					<dl>
+						<dt><img src="./img/top_business02.png" alt="アプリケーション開発"></dt>
+						<dd>
+							<h3>アプリケーション開発</h3>
+
+							<p>近年では、需要の高いAndroid、iOSでのアプリ開発。弊社では、業務システムと連携したアプリの開発を中心に行っております。</p>
+
+							<a href="./introduction.html#appli" class="btnStyle02">もっと詳しく</a>
+						</dd>
+					</dl>
+				</li>
+				<li class="contentColor03">
+					<dl>
+						<dt><img src="./img/top_business03.png" alt="ソリューション提案"></dt>
+						<dd>
+							<h3>ソリューション提案</h3>
+
+							<p>アナログでの管理や、現状採用されている業務システムに対しての改善や運用のためのご提案など、経験豊富なアイデアで解決への導線をご用意いたします。</p>
+
+							<a href="./introduction.html#solution" class="btnStyle02">もっと詳しく</a>
+						</dd>
+					</dl>
+				</li>
+			</ul>
+		</section>
+	</div>
+
+	<section class="conteBox">
+		<h2 class="titleStyle02">
+			Recent Works
+			<span>最近の制作実績</span>
+		</h2>
+
+		<ul class="contentStyle02 cf">
+			<li>
+				<dl>
+					<dt><img src="./img/top_works01.png" alt="WEB予約システム開発"></dt>
+					<dd>
+						<h3>WEB予約システム開発</h3>
+
+						<p>サロン用の予約システム開発。POSや顧客管理と連動する形式で、導入先の手間をぐっと削減しました。</p>
+
+						<a href="./performance.html#web" class="btnStyle03">もっと詳しく</a>
+					</dd>
+				</dl>
+			</li>
+			<li>
+				<dl>
+					<dt><img src="./img/top_works02.png" alt="POSレジシステム開発"></dt>
+					<dd>
+						<h3>POSレジシステム開発</h3>
+
+						<p>業種に合わせたPOSレジを開発。クラウドとの連携も合わせて、日々の業務効率の改善につながりました。</p>
+
+						<a href="./performance.html#pos" class="btnStyle03">もっと詳しく</a>
+					</dd>
+				</dl>
+			</li>
+			<li>
+				<dl>
+					<dt><img src="./img/top_works03.png" alt="テーブルオーダー開発"></dt>
+					<dd>
+						<h3>テーブルオーダー開発</h3>
+
+						<p>飲食店用のテーブルオーダー端末を、AndroidOSを採用してアプリケーション開発しました。</p>
+
+						<a href="./performance.html#order" class="btnStyle03">もっと詳しく</a>
+					</dd>
+				</dl>
+			</li>
+			<li>
+				<dl>
+					<dt><img src="./img/top_works04.png" alt="Amazon連携システム"></dt>
+					<dd>
+						<h3>Amazon連携システム</h3>
+
+						<p>AmazonAPIと連携した上での、商品情報リサーチや、出荷などのツールの開発を行いました。</p>
+
+						<a href="./performance.html#amazon" class="btnStyle03">もっと詳しく</a>
+					</dd>
+				</dl>
+			</li>
+		</ul>
+	</section>
+
+	<div class="contact_link">
+		<a href="./contact.php" class="btnStyle04">ご相談やご依頼、お見積りなど お問い合わせください</a>
+	</div>
+
+</div><!-- /#main -->
+
+
+
+<p id="pageTop"><a href="#pTop"><img src="./img/pagetop_off.png" alt="ページトップへ"></a></p>
+
+
+<!-- footer -->
+<footer class="pc">
+	<div class="inner">
+		<ul class="f_content cf">
+			<li><img src="./img/logo.png" alt="テトラコマンド株式会社"></li>
+			<li>
+				<dl>
+					<dt>テトラコマンド株式会社</dt>
+					<dd>〒531-0072<br>
+						大阪府大阪市北区豊崎2丁目7-9 豊崎いずみビル 3階<br>
+						tel. 06-6467-8546<br>
+						E-mail. &#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#116;&#101;&#116;&#114;&#97;&#99;&#111;&#109;&#109;&#97;&#110;&#100;&#46;&#99;&#111;&#46;&#106;&#112;</dd>
+				</dl>
+			</li>
+			<li>
+				<ul class="f_link cf">
+					<li><a href="./">HOME</a></li>
+					<li><a href="./introduction.html">事業紹介</a></li>
+					<li><a href="./performance.html">制作実績</a></li>
+					<li><a href="./recruit.php">採用情報</a></li>
+					<li><a href="./company.html">会社概要</a></li>
+					<li><a href="./contact.php">お問い合わせ</a></li>
+				</ul>
+			</li>
+		</ul>
+	</div>
+
+	<p class="copyright"><small>&copy;2018 TetraCommand Co., Ltd. All right reserved.</small></p>
+</footer>
+<!-- /footer -->
+
+
+<div class="sp">
+
+	<nav>
+		<ul>
+			<li><a href="./">HOME</a></li>
+			<li><a href="./introduction.html">事業紹介</a></li>
+			<li><a href="./performance.html">制作実績</a></li>
+			<li><a href="./recruit.php">採用情報</a></li>
+			<li><a href="./company.html">会社概要</a></li>
+			<li><a href="./contact.php">お問い合わせ</a></li>
+		</ul>
+	</nav>
+
+	<footer>
+		<div class="f_inner">
+			<ul>
+				<li><a href="#pTop"><i class="fa fa-long-arrow-up"></i>ページトップ</a></li>
+				<li><a href="tel:0664678546"><i class="fa fa-phone"></i>お電話</a></li>
+				<li><a href="./contact.php"><i class="fa fa-envelope"></i>メール</a></li>
+			</ul>
+		</div>
+
+		<p class="copyright">&copy;2018 TetraCommand Co., Ltd. All right reserved.</p>
+	</footer>
+
+</div>
+
+<!-- slide_menu -->
+<div id="modal">
+	<div class="page_slide_navi">
+		<p class="btn-close"><a href="javascript:$.pageslide.close()">閉じる</a></p>
+
+		<ul id="slide_navi">
+			<li><a href="./">HOME</a></li>
+			<li><a href="./introduction.html">事業紹介</a></li>
+			<li><a href="./performance.html">制作実績</a></li>
+			<li><a href="./recruit.php">採用情報</a></li>
+			<li><a href="./company.html">会社概要</a></li>
+			<li><a href="./contact.php">お問い合わせ</a></li>
+		</ul>
+	</div>
+</div>
+
+<script src="./js/jquery.pageslide.js"></script>
+<script>
+$(function(){
+	$('#naviOpen').pageslide({ direction: 'left', modal: true });
+});
+</script>
+<script src="./js/data-img.js"></script>
+<!-- /slide_menu -->
+<script src="./js/flickity-docs.min.js"></script>
+
+
+</body>
+</html>

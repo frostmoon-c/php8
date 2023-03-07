@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<link rel="stylesheet" href="./style.css" media="screen,print">
+	<link rel="stylesheet" href="./default.css">
+
+	<title>研修</title>
+</head>
+
+<html>
+<body id="pTop" class="article contact"
+	data-responsejs='{ "create": [ { "prop": "width", "prefix": "src", "lazy": true, "breakpoints": [0,592,1001] } ]}'>
+	<div class="headerWrap">
+
+		<header>
+			<div class="cf">
+				<p class="logo"><a href="./"><img src="./logo.png" alt="テトラコマンド株式会社"></a></p>
+			</div>
+			<h1>大阪北区にて、WEBシステム開発、アプリ開発ならテトラコマンド株式会社へ</h1>
+		</header>
+
+		<h2 id="cover"><img src="./cover_contact.jpg" alt="お問い合わせ"></h2>
+	</div>
+	<nav class="pc">
+		<ul>
+			<li><a href="./"><img src="gnavi01_off.png" alt="ホーム"></a></li>
+			<li><a href="./"><img src="gnavi02_off.png" alt="事業紹介"></a></li>
+			<li><a href="./"><img src="gnavi03_off.png" alt="制作実績"></a></li>
+			<li><a href="./"><img src="gnavi06_off.png" alt="採用情報"></a></li>
+			<li><a href="./"><img src="gnavi04_off.png" alt="会社概要"></a></li>
+			<li><a href="./"><img src="gnavi05_off.png" alt="お問い合わせ"></a></li>
+		</ul>
+	</nav>
+	<ul class="pankuzu cf">
+		<li><a href="./">ホーム</a>&gt;</li>
+		<li>お問い合わせ</li>
+	</ul>
+	<div id="main">
+		<section class="conteBox">
+			<h3 class="titleStyle02">
+				Contact
+				<span>お問い合わせ・お見積</span>
+			</h3>
+
+
+
+			<form id="form" method="POST">
+
+				<table class="tb tb2 contact_tb">
+
+					<tr>
+						<th><label for="name">御社名<em>必須</em></label></th>
+						<td>
+							<input type="text" name="company_name" value="" id="company_name" class="is-error-name">
+							<span id="company_name-error" style="display: none;">社名を入力してください</span>
+						</td>
+					</tr>
+
+					<tr>
+						<th><label for="name">お名前（あるいはご担当者名）<em>必須</em></label></th>
+						<td>
+							<input type="text" name="name" value="" id="name" class="is-error-name">
+							<span id="name-error" style="display: none;">名前を入力してください</span>
+						</td>
+
+					</tr>
+
+					<tr>
+						<th><label for="kana">お名前（あるいはご担当者名）<br>ふりがな</label></th>
+						<td><input type="text" name="kana" value="" id="kana"></td>
+					</tr>
+
+					<tr>
+						<th><label for="zip1">ご住所</label></th>
+						<td class="zip1">
+						&#12306;<input type="text" name="zip1" maxlength="3" id="zip1" class="validate"> - <input type="text" name="zip2" maxlength="4" id="zip2" class="validate">
+						<em class="form_notice1">郵便番号を入力すると、自動で都道府県と市町村郡が表示されます。</em><br>
+						<label>都道府県<input type="text" name="pref" value="" id="pref" class="validate"></label><br>
+						<label>市区町村<input type="text" name="city" value="" id="city" class="validate"></label><br>
+						<label>番地<input type="text" name="add" value="" id="add" class="validate"></label>
+						</td>
+						</tr>
+
+					<tr>
+						<th><label for="tel">お電話番号<em>必須</em></label></th>
+						<td>
+							<input id="tel" type="text" name="tel" value="" class="is-error-tel">
+							<span id="tel-error" style="display: none;">電話番号を入力してください</span>
+							<span id="tel-error2" style="display: none;">正しい形式で電話番号を入力してください</span>
+						</td>
+					</tr>
+
+					<tr>
+						<th><label for="mail">メールアドレス<em>必須</em></label></th>
+						<td>
+							<input id="mail" type="text" name="mail" value="" class="is-error-mail">
+							<span id="mail-error" style="display: none;">メールアドレスを入力してください</span>
+							<span id="mail-error2" style="display: none;">正しい形式でメールアドレスを入力してください</span>
+						</td>
+					</tr>
+
+					<tr>
+						<th><label for="hp">ホームページURL</label></th>
+						<td><input id="hp" type="text" name="hp" value=""></td>
+					</tr>
+
+					<!--<tr>
+				<th>性別</th>
+				<td>
+				<label><input type="radio" name="sex" value="男" checked="checked">男</label>
+				<label><input type="radio" name="sex" value="女">女</label>
+				</td>
+				</tr>-->
+
+					<tr>
+						<th><label for="msg">お問い合わせ内容<em>必須</em></label></th>
+						<td>
+							<textarea name="msg" id="msg" class="is-error-msg"></textarea>
+							<span id="msg-error" style="display: none;">問い合わせ内容を入力してください</span>
+						</td>
+					</tr>
+
+				</table>
+				<input type="hidden" name="upflg" value="1">
+
+				<ul class="choose_list1 cf">
+					<li><input class="clearForm" type="reset" name="reset" value="リセットする"></li>
+					<!-- <li><input class="clearForm2" type="submit" name="send" value="入力内容の確認"></li> -->
+					<li><button type="button" class="clearForm2" name="send">入力内容の確認</button></li>
+				</ul>
+
+			</form>
+
+
+		</section>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+<script src="./js/jquery.jpostal.js"></script>
+<script>
+	$('.clearForm2').click(function () {
+
+		{
+			var company_name = $('#company_name').val();
+			$('#company_name-error').hide();
+
+			if (!company_name) {
+				$('#company_name-error').show();
+			}
+		}
+
+		{
+			var name = $('#name').val();
+			$('#name-error').hide();
+
+			if (!name) {
+				$('#name-error').show();
+			}
+		}
+
+		{
+			var tel = $('#tel').val();
+			var tel_pattern = /^(0{1}\d{9,10})$/;
+			$('#tel-error').hide();
+			$('#tel-error2').hide();
+
+			if (!tel) {
+				$('#tel-error').show();
+			} else if (!tel.match(tel_pattern)) {
+				$('#tel-error').hide();
+				$('#tel-error2').show();
+			}
+		}
+
+		{
+			var mail = $('#mail').val();
+			var mail_pattern = /^([a-zA-Z0-9][a-zA-Z0-9-]*[a-zA-Z0-9]*\.)+[a-zA-Z]{2,}$"/;
+			$('#mail-error').hide();
+			$('#mail-error2').hide();
+
+			if (!mail) {
+				$('#mail-error').show();
+			} else if (!mail.match(mail_pattern)) {
+				$('#mail-error').hide();
+				$('#mail-error2').show();
+			}
+		}
+
+		{
+			var msg = $('#msg').val();
+			$('#msg-error').hide();
+
+			if (!msg) {
+				$('#msg-error').show();
+			}
+		}
+	});
+</script>
+
+
+
+	<script>
+	$(function () {
+		$('#zip1').jpostal({
+		postcode : [
+			'#zip1',
+			'#zip2'
+		],
+			address : {
+				'#pref' : '%3',
+				'#city' : '%4',
+				'#add' : '%5'
+			}
+		});
+	});
+	</script>
+
+
+</html>

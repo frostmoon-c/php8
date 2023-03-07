@@ -1,0 +1,28 @@
+version: '3.3'
+services:
+  app:
+    build: .
+    ports:
+      - 80:80
+    volumes:
+      - ../workspace:/var/www/
+      - ./msmtprc:/etc/msmtprc
+      - ./php.ini:/usr/local/etc/php/php.ini
+      - ./000-default.conf:/etc/apache2/sites-available/000-default.conf
+    working_dir: /var/www
+    privileged: true
+
+  db:
+     image: postgres:10
+     ports:
+       - ${POSTGRES_PORT}:5432
+     volumes:
+       - dbdata:/var/lib/postgresql/data
+     environment:
+         POSTGRES_DB: ${POSTGRES_DB}
+         POSTGRES_USER: ${POSTGRES_USER}
+         POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+         TZ: JST-9
+         PGTZ: JST-9
+volumes:
+   dbdata:

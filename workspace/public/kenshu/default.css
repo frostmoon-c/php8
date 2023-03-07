@@ -1,0 +1,24 @@
+img {
+    border: none;
+    vertical-align: bottom;
+    line-height: 1;
+    -ms-interpolation-mode: bicubic;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+ /* 大きい画像縮小してもキレイ */
+}
+ul, ol, li {
+    list-style: none;
+}
+a {
+    cursor: pointer;
+}
+* {
+    margin: 0;
+    padding: 0;
+}
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+}
